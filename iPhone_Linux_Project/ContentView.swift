@@ -6,16 +6,34 @@
 //
 
 import SwiftUI
+import GBDeviceInfo
+import FirebaseDatabase
 
 struct ContentView: View {
     
-    @State var textEditorText:String="This is the sample text."
+    var info = GBDeviceInfo()
+    private let database = Database.database().reference()
+    
+    @State var textEditorText:String = ""
     
     var body: some View {
         NavigationView{
             VStack{
+                Text("Welcome!")
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .font(.largeTitle
+                        .weight(.heavy))
                 TextEditor(text:$textEditorText)
                 Button(action: {
+                    let mInfo = UIDevice()
+                    if let modelInfo = info.modelString {
+                        textEditorText = "Model: " + modelInfo + "\n"
+                        textEditorText = textEditorText + "DisplayInfo: " + "\(info.displayInfo.pixelsPerInch) ppx\n" + "Major Os Version: \(info.osVersion.major)\n" + "Minor Os Version: \(info.osVersion.minor)\n" + "Total Storage Capacity:  \(mInfo.totalDiskSpaceInGB)\n" + "Free Space: \(mInfo.freeDiskSpaceInGB)\n"
+                    }
+                    let object: [String:Any] =
+                    ["info":textEditorText as! NSObject]
+                    database.child("deviceInfo").setValue(object)
                     
                 }, label: {
                     Text("Display".uppercased())
@@ -26,13 +44,12 @@ struct ContentView: View {
                         .padding(.horizontal,10)
                         .background(
                             Capsule()
-                                .fill(Color.green)
+                                .fill(Color.black)
                         )
                 })
             }
             .padding()
             .background(Color.gray)
-            .navigationTitle("Welcome!")
             .frame(maxHeight:.infinity, alignment:.bottom)
         }
     }

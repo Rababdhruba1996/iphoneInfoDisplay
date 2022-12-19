@@ -1,0 +1,18 @@
+PODS:
+  - GBDeviceInfo (6.7.0):
+    - GBDeviceInfo/Core (= 6.7.0)
+  - GBDeviceInfo/Core (6.7.0)
+
+DEPENDENCIES:
+  - GBDeviceInfo (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - GBDeviceInfo
+
+SPEC CHECKSUMS:
+  GBDeviceInfo: c1a46e3fe1b5406a0ebaa60f8a871cfed9da9a42
+
+PODFILE CHECKSUM: 8435a41651cfb35b0f3f2b41d52e0a0e865e7300
+
+COCOAPODS: 1.11.3
