@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>204383388480-g38fs0q2qi7k8b6qj0dldmc8gt8tpmaj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.204383388480-g38fs0q2qi7k8b6qj0dldmc8gt8tpmaj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAR2Djz22SLbsYQ04rxEhdAZn0F3U8mK30</string>
+	<key>GCM_SENDER_ID</key>
+	<string>204383388480</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.rababvice.iphoneInfoDisplay</string>
+	<key>PROJECT_ID</key>
+	<string>iphone-5df16</string>
+	<key>STORAGE_BUCKET</key>
+	<string>iphone-5df16.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:204383388480:ios:a2df0668e4f428df2370a5</string>
+	<key>DATABASE_URL</key>
+	<string>https://iphone-5df16-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
